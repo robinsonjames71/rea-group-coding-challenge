@@ -1,6 +1,6 @@
-##REA Group Coding Challenge
+## REA Group Coding Challenge
 
-###Introduction
+### Introduction
 
 I have chosen AngularJS as it can meet the requirements of the brief and is a technology I am comfortable with.
 

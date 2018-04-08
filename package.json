@@ -1,0 +1,35 @@
+{
+  "name": "rea-group-coding-challenge",
+  "version": "1.0.0",
+  "description": "REA Group Coding Challenge",
+  "main": "index.htm",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinsonjames71/rea-group-coding-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robinsonjames71/rea-group-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/robinsonjames71/rea-group-coding-challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "angular": "^1.6.9",
+    "angular-mocks": "^1.6.9",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-spec-reporter": "0.0.32"
+  }
+}
