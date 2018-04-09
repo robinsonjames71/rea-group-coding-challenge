@@ -14,9 +14,11 @@
 
         <!-- Load Angular -->
         <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-resource/angular-resource.min.js"></script>
 
         <!-- Load script files -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/services.js"></script>
         <script src="scripts/controllers.js"></script>
     </head>
     <body>
@@ -39,7 +41,21 @@
         <!-- Initialise AngularJS Controller -->
         <div class="container" ng-controller="homeController">
 
-            <h1>{{ hello }}</h1>
+            <!-- Loop through results array of data.json to display key/properties -->
+            <div class="results">
+                <h2>Results:</h2>
+                <div class="results-details" ng-repeat="result in data.results">
+                    <p>{{ result }}</p>
+                </div>
+            </div>
+
+            <!-- Loop through saved array of data.json to display key/properties -->
+            <div class="saved">
+                <h2>Saved:</h2>
+                <div class="saved-details" ng-repeat="save in data.saved">
+                    <p>{{ save }}</p>
+                </div>
+            </div>
 
         </div>
 

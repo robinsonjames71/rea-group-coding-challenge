@@ -6,7 +6,8 @@ describe('Controllers', function() {
     describe('homeController', function(){
         var homeController, scope;
 
-        beforeEach(inject(function($controller, $rootScope){ //instantiate controller using $controller service
+        // Add controller and scope to each test
+        beforeEach(inject(function($controller, $rootScope){
             scope = $rootScope.$new();
             homeController = $controller('homeController', {
                 $scope: scope
@@ -24,6 +25,13 @@ describe('Controllers', function() {
             expect(scope.hello).toEqual('Hello world');
 
         });
+
+        it("call to json first id key of data.json file should be 1", function() {
+
+            expect(scope.data.results).toEqual(1);
+
+        });
+
     })
 
 });

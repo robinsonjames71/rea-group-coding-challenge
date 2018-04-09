@@ -1,1 +1,1 @@
-var reaApp = angular.module('reaApp', []);
+var reaApp = angular.module('reaApp', ['ngResource']);
