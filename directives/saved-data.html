@@ -1,7 +1,12 @@
-<div class="col-10">
+<div class="col-12 col-md-10">
+    <!-- Set common class of property on card -->
+    <!-- Set individual class of property + id on card ie. property-1 -->
+    <!-- Display data.json properties with savedObject -->
     <div class="property property-{{savedObject.id}}" ng-style="{'background-color':savedObject.agency.brandingColors.primary}">
         <img class="property-logo" ng-src="{{savedObject.agency.logo}}" alt="">
         <img class="property-promo" ng-src="{{savedObject.mainImage}}" alt="">
         <p class="property-price">Price: {{savedObject.price}}</p>
+        <!-- Create our function button to remove the property from the saved array -->
+        <button type="button" class="btn btn-outline-primary" ng-click="removeProperty({ change: 'remove', property: savedObject})">Remove</button>
     </div>
 </div>

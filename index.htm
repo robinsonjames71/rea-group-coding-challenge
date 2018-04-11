@@ -27,16 +27,18 @@
 
         <!-- Navigation Markup here -->
         <header>
-            <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/">REA Group Coding Challenge</a>
-                </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/">REA Group Coding Challenge</a>
+                    </div>
 
-                <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                </ul>
-            </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -45,18 +47,20 @@
 
             <div class="row">
                 <!-- Loop through results array of data.json to display key/properties -->
-                <div class="results col-6">
+                <div class="results col-12 col-sm-6">
                     <h2>Results:</h2>
                     <div class="results-details row" ng-repeat="result in data.results">
-                        <results-data result-object="result"></results-data>
+                        <!-- Send result object to directive as resultObject and send addRemoveProperty method -->
+                        <results-data result-object="result" add-property="addRemoveProperty(change, property)"></results-data>
                     </div>
                 </div>
 
                 <!-- Loop through saved array of data.json to display key/properties -->
-                <div class="saved col-6">
+                <div class="saved col-12 col-sm-6">
                     <h2>Saved:</h2>
                     <div class="saved-details row" ng-repeat="save in data.saved">
-                        <saved-data saved-object="save"></saved-data>
+                        <!-- Send save object to directive as savedObject and send addRemoveProperty method -->
+                        <saved-data saved-object="save" remove-property="addRemoveProperty(change, property)"></saved-data>
                     </div>
                 </div>
             </div>

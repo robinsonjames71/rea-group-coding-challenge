@@ -4,7 +4,8 @@ reaApp.directive('resultsData', function(){
         templateUrl: 'directives/results-data.html',
         replace: true,
         scope: {
-            resultObject: '='
+            resultObject: '=',
+            addProperty: '&'
         }
     }
 })
@@ -14,7 +15,8 @@ reaApp.directive('savedData', function(){
         templateUrl: 'directives/saved-data.html',
         replace: true,
         scope: {
-            savedObject: '='
+            savedObject: '=',
+            removeProperty: '&'
         }
     }
 })

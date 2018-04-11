@@ -20,11 +20,11 @@ describe('Controllers', function() {
 
         });
 
-        it("should have a hello variable with a string of 'Hello world'", function() {
+        // it("should have a hello variable with a string of 'Hello world'", function() {
 
-            expect(scope.hello).toEqual('Hello world');
+        //     expect(scope.hello).toEqual('Hello world');
 
-        });
+        // });
 
         // it("call to json first id key of data.json file should be 1", function() {
 

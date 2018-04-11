@@ -1,7 +1,12 @@
-<div class="col-10">
+<div class="col-12 col-md-10">
+    <!-- Set common class of property on card -->
+    <!-- Set individual class of property + id on card ie. property-1 -->
+    <!-- Display data.json properties -->
     <div class="property property-{{resultObject.id}}" ng-style="{'background-color':resultObject.agency.brandingColors.primary}">
         <img class="property-logo" ng-src="{{resultObject.agency.logo}}" alt="">
         <img class="property-promo" ng-src="{{resultObject.mainImage}}" alt="">
         <p class="property-price">Price: {{resultObject.price}}</p>
+        <!-- Create our function button to save the property -->
+        <button type="button" class="btn btn-outline-primary" ng-click="addProperty({ change: 'add', property: resultObject})">Add</button>
     </div>
 </div>
