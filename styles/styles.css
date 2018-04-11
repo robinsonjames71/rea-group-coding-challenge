@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+.property {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.property-logo {
+    display: inline-block;
+}
+.property-promo {
+    max-width: 100%;
+    width: auto;
+}
+.property-price {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.property-4 .property-price {
+    color: #FFF;
+}

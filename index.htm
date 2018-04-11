@@ -11,6 +11,7 @@
 
         <!-- Load bootstrap via CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="styles/styles.css">
 
         <!-- Load Angular -->
         <script src="node_modules/angular/angular.min.js"></script>
@@ -20,6 +21,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/services.js"></script>
         <script src="scripts/controllers.js"></script>
+        <script src="scripts/directives.js"></script>
     </head>
     <body>
 
@@ -41,19 +43,21 @@
         <!-- Initialise AngularJS Controller -->
         <div class="container" ng-controller="homeController">
 
-            <!-- Loop through results array of data.json to display key/properties -->
-            <div class="results">
-                <h2>Results:</h2>
-                <div class="results-details" ng-repeat="result in data.results">
-                    <p>{{ result }}</p>
+            <div class="row">
+                <!-- Loop through results array of data.json to display key/properties -->
+                <div class="results col-6">
+                    <h2>Results:</h2>
+                    <div class="results-details row" ng-repeat="result in data.results">
+                        <results-data result-object="result"></results-data>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Loop through saved array of data.json to display key/properties -->
-            <div class="saved">
-                <h2>Saved:</h2>
-                <div class="saved-details" ng-repeat="save in data.saved">
-                    <p>{{ save }}</p>
+                <!-- Loop through saved array of data.json to display key/properties -->
+                <div class="saved col-6">
+                    <h2>Saved:</h2>
+                    <div class="saved-details row" ng-repeat="save in data.saved">
+                        <saved-data saved-object="save"></saved-data>
+                    </div>
                 </div>
             </div>
 

@@ -6,8 +6,8 @@ reaApp.service('dataService', ['$resource', function($resource) {
         // Find the JSON file
         var reaAPI = $resource("./data.json");
 
-        // Return the results of get
-        return reaAPI.get();
+        // Return the results
+        return reaAPI;
 
     };
 

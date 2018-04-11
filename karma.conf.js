@@ -20,6 +20,7 @@ module.exports = function(config) {
         './node_modules/angular-mocks/angular-mocks.js',       // loads our modules for tests
         './scripts/app.js',                                    // our angular app
         './scripts/services.js',                               // angularjs services
+        './scripts/services.spec.js',
         './scripts/controllers.js',                            // angularjs controllers
         './scripts/controllers.spec.js'
     ],
