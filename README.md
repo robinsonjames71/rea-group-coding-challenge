@@ -8,6 +8,8 @@ I have also chosen to use BootStrap for similar reasons and feel it should simpl
 
 ### Notes
 
+Run in localhost use Sublime package: SublimeServer
+
 From dataService service I am using the $resource function to obtain the property data as defined in data.json
 
 The service is then injected into the controller where the property data is now available to be added to the scope
